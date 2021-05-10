@@ -1,0 +1,86 @@
+Goals for IoT project:
+ 
+send email with daily schedule
+track ig activity
+track spotify activity
+track fitness from WatchOS
+Show Routine
+Upcoming news (jw.org, barcablaugranes)
+Reminders: (trash, group, etc.)
+Fitness Goals: (cals, strength, etc.)
+ALARM System
+ 
+Website
+
+Login =>
+(table)
+Hash and Encrypt Login Credentials
+
+Login -> Play song on spotify through device
+
+
+Password Management =>
+(table)
+Store encrypted passwords
+
+
+
+Health =>
+
+Track Workouts
+track workouts
+https://wger.de/en/software/api
+Track Mealplan
+food tracking
+https://www.nutritionix.com/business/api
+Track use of products (protein powder, collagen)
+
+
+
+
+Spotify =>
+ 
+Auto-censor lyrics
+https://developer.spotify.com/documentation/web-api/quick-start/
+
+disorient by playing on different devices
+https://developer.spotify.com/documentation/web-api/guides/using-connect-web-api/
+
+manipulate spotify
+https://github.com/thelinmichael/spotify-web-api-node
+
+
+
+Device Management =>
+(table)
+Track Devices, Display Status/Location
+
+Login -> Based on IP Address, store location every so often
+
+
+
+API =>
+
+ 
+joke api
+https://github.com/15Dkatz/official_joke_api
+ 
+advice api
+https://api.adviceslip.com/
+ 
+evil insults
+https://evilinsult.com/api/
+ 
+text to speech
+https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-gettingStarted
+ 
+marvel
+https://developer.marvel.com/
+ 
+new device on network
+https://github.com/RafhaanShah/Net-Mon
+
+JW.ORG =>
+Web Scrape wol.jw.org for daily text
+wol.jw.org
+ 

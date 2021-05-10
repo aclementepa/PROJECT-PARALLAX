@@ -1,0 +1,58 @@
+Task Scheduler - batch file, opens home assistant website
+
+Website - javascript, ajax, html, css
+
+Server - Node.js
+
+DevOps - github, git repo, jenkins
+
+
+https://www.techrepublic.com/article/tech-projects-for-tech-leaders-how-and-why-to-add-node-red-to-your-home-lab/
+
+kodachi
+https://www.digi77.com/linux-kodachi/#Where
+
+install parrot on docker
+
+usb - install tails
+https://tails.boum.org/about/index.en.html
+
+opensense as a firewall
+https://opnsense.org/about/about-opnsense/
+
+node-red (docker)
+https://nodered.org/docs/getting-started/docker
+Might not need node-red
+
+
+ 
+ 
+ 
+ 
+later...
+ 
+development:
+ 
+node.js server
+android development studio
+jenkins
+maven
+kubernetes
+github
+python setup
+docker
+ 
+IoT Devices:
+ 
+server
+phone
+watch
+ 
+ 
+programs:
+ 
+home assistant
+tasker
+autowear
+homeslide
+
