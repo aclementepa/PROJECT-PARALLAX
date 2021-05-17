@@ -1,5 +1,7 @@
 Goals for IoT project:
  
+Que-Haceres Scheduling
+
 send email with daily schedule
 track ig activity
 track spotify activity
