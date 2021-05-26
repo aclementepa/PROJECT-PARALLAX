@@ -4,10 +4,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
+    <script src="https://kit.fontawesome.com/90cd6f0909.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
     <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-    <link type="text/css" rel="stylesheet" src="main.css">
-    <link type="text/css" rel="stylesheet" src="desktop.css">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="desktop.css">
     <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
     <style lang="en" type="text/css" id="dark-mode-native-style"></style>
     <!--
@@ -18,37 +19,31 @@
             /*background-image: linear-gradient(#96deae, #fff, #fff, #fff,#fff,#fff, #5b5d5a, #226C3B)*/
         }
 
-        .container {
-            background: inherit;
-        }
-
-            .container:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px);
-    background: inherit;
-        }
     </style>
     -->
 </head> 
 <body>
-  <nav style="background-color: #333333;">
-    <div class="desktop">
-
-    </div>
-  </nav>
     <main>
-        <div class="container">
-            <div class="card card-body" style="justify-content: center; background-color: #2e2a59;  background-color: #333333; height: 500px; max-width: 400px; margin-left:auto; margin-right:auto;">
+      <nav class="test-blur">        
+          <div class="container-fluid" style="background-color: #0b0c29; width: 100%;">
+            <div class="container-fluid" style="padding:1% 0;">
+              <div class="d-none d-lg-inline-block">
+                <h1>Anthony Clemente</h1>
+              </div>
+              <div class="d-none d-sm-inline-block d-lg-none">
+                <h1>Anthony Clemente</h1>
+              </div>
+              <div class="d-xs-inline-block d-sm-none">
+                <h1>Anthony Clemente</h1>
+              </div>
+            </div>
+        </div>
+      </nav>
+        <div id="login" class="container">
+            <div class="card card-body" style="justify-content: center; background-color: #2e2a59;  background-color: #333333; background-color: inherit; height: 500px; max-width: 400px; margin-left:auto; margin-right:auto;">
                 <h3 style="border-bottom: 1px inset;">Login</h3>
                 <br>
-                <form>
+                <form id="login-form">
                     <label for="f-UserName" style="margin-bottom: 5px;">User Name</label><br>
                     <input type="text" id="f-UserName" placeholder="Username">
                     <br><br>

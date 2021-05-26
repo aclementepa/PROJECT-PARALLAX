@@ -1,18 +1,21 @@
-
-    body {/*
-        background-image: url('background.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;*/
+body {/*
+background-image: url('background.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+*/
                background-color: #e6e7de;
                background-color: #73d393;
+               background-color: #0b0c29;
                background-image: url('background.jpg');
+               background-repeat: no-repeat;
+               color: #f8f8f8;
+               background-attachment: fixed;
        }
        
                .card {
          box-shadow: 0 0 5px 0 ;
          background: inherit;
-         margin: 100px;
+         margin: 200px;
          display:block;
                    /*opacity:.75;filter: blur(.5px);
          filter: blur(1px);*/
@@ -37,3 +40,21 @@
            .card-body {
                padding:1.5rem;
            }
+.test-blur {
+    background: inherit;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, .5);
+    filter: blur(.5px);
+    background: inherit;
+}
+
+#login-form {
+    filter:brightness(.5);
+    filter:contrast(150%);
+}
