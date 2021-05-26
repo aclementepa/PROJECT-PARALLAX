@@ -1,0 +1,39 @@
+
+    body {/*
+        background-image: url('background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;*/
+               background-color: #e6e7de;
+               background-color: #73d393;
+               background-image: url('background.jpg');
+       }
+       
+               .card {
+         box-shadow: 0 0 5px 0 ;
+         background: inherit;
+         margin: 100px;
+         display:block;
+                   /*opacity:.75;filter: blur(.5px);
+         filter: blur(1px);*/
+       }
+       label {
+           
+           color: #f8f8f8;
+       }
+           h3 {
+               color: black;
+               color: #f8f8f8;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+           }
+           input {
+               border-radius: 5px;
+               min-height:40px;
+               padding-left:10px;
+               width:100%;
+           }
+           .card-body {
+               padding:1.5rem;
+           }
