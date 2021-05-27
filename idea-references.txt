@@ -1,0 +1,4 @@
+idea references
+
+change background based on image:
+https://www.w3schools.com/jsref/canvas_getimagedata.asp
