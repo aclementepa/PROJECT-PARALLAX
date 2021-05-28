@@ -18,13 +18,20 @@ window.addEventListener('load', function () {
         var canvas = document.getElementById("background-canvas");
         canvas.getContext('2d').drawImage(img, 0, 0, img.width, img.height);
         
-        var pixelData = canvas.getContext('2d').getImageData(1000, 1000, 1, 1).data;
+        var pixelData1 = canvas.getContext('2d').getImageData(1, 1, 1, 1).data;
+        var pixelData2 = canvas.getContext('2d').getImageData(1000, 1000, 1, 1).data;
 
-        var rgb = rgbToHex(pixelData[0], pixelData[1], pixelData[2])
+        var rgb1 = rgbToHex(pixelData1[0], pixelData1[1], pixelData1[2])
+        var rgb2 = rgbToHex(pixelData2[0], pixelData2[1], pixelData2[2])
         
-        var hex = "#" + ("000000" + rgb).slice(-6); 
-        navContainer.style.backgroundColor =  hex;
-        console.log(rgb);
+        var hex1 = "#" + ("000000" + rgb1).slice(-6); 
+        var hex2 = "#" + ("000000" + rgb2).slice(-6); 
+
+        navContainer.style.backgroundImage =  "linear-gradient(to bottom right, " + hex1 + ", " + hex2 + ") !important;";
+        navContainer.style.backgroundColor = hex2;
+        console.log(navContainer.style.backgroundImage.toString());
+        console.log(rgb1);
+        console.log(rgb2);
 
         //var values = document.getElementById("values");
         //values.innerHTML = 'R: ' + pixelData[0] + '<br>G: ' + pixelData[1] + '<br>B: ' + pixelData[2] + '<br>A: ' + pixelData[3];
