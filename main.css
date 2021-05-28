@@ -74,11 +74,12 @@ input {
 }
 
 .dropdown-menu {
-    background-color:rgba(0,0,0, 0.75);
+    background-color:rgba(0,0,0, 0.6);
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover .nav-item:hover {
     font-weight: 600;
     filter: brightness(90%);
     background-color: inherit;
+    background-color:rgba(0,0,0, 1);
 }
