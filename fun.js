@@ -1,13 +1,13 @@
 window.addEventListener('load', function () {
     var div = document.body;
     var style = window.getComputedStyle(div);
-    ChangeColor();  
+    var obj = document.getElementById("nav-bar-container");
+    ChangeColor(obj);  
     var elem = document.getElementById("background-canvas");
     elem.parentNode.removeChild(elem);
     elem = document.getElementById("i1");
     elem.parentNode.removeChild(elem);
-    function ChangeColor() {
-        var navContainer = document.getElementById("nav-bar-container");
+    function ChangeColor(obj) {
         var path = style.getPropertyValue('background-image');
         path = path.substring(4, path.length-1);
         
@@ -28,8 +28,8 @@ window.addEventListener('load', function () {
         var hex2 = "#" + ("000000" + rgb2).slice(-6); 
 
         //navContainer.style.backgroundImage =  "linear-gradient(to bottom right, " + hex1 + ", " + hex2 + ") !important;";
-        navContainer.style.backgroundColor = hex1;
-        console.log(navContainer.style.backgroundImage.toString());
+        obj.style.backgroundColor = hex1;
+        console.log(obj.style.backgroundImage.toString());
         console.log(rgb1);
         console.log(rgb2);
 
