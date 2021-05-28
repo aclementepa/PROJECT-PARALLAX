@@ -12,6 +12,10 @@ background-size: 100%;
     background-attachment: fixed;
 }
 
+#background-canvas {
+    background-image: url('background.jpg');
+}
+
 .card {
     box-shadow: 0 0 5px 0 ;
     background: inherit;
