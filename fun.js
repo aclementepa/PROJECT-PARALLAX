@@ -27,8 +27,8 @@ window.addEventListener('load', function () {
         var hex1 = "#" + ("000000" + rgb1).slice(-6); 
         var hex2 = "#" + ("000000" + rgb2).slice(-6); 
 
-        navContainer.style.backgroundImage =  "linear-gradient(to bottom right, " + hex1 + ", " + hex2 + ") !important;";
-        navContainer.style.backgroundColor = hex2;
+        //navContainer.style.backgroundImage =  "linear-gradient(to bottom right, " + hex1 + ", " + hex2 + ") !important;";
+        navContainer.style.backgroundColor = hex1;
         console.log(navContainer.style.backgroundImage.toString());
         console.log(rgb1);
         console.log(rgb2);

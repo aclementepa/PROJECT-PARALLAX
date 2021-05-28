@@ -11,10 +11,26 @@
     <link type="text/css" rel="stylesheet" href="desktop.css">
     <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
     <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 
-    <script src="fun.js"></script>
 </head> 
-<body id="body">
+<nav class="test-blur">        
+  <div id="nav-bar-container" class="container-fluid" style="/*background-color: #0b0c29;*/ width: 100%; opacity: .9;">
+      <div class="container-fluid" style="padding:1% 0;">
+        <div class="d-none d-lg-inline-block">
+          <h1 style="filter:brightness(200%); font-weight: 600; z-index: 900;">Clemente.Tech</h1>
+        </div>
+        <div class="d-none d-sm-inline-block d-lg-none">
+          <h1 style="filter:brightness(200%);">Clemente.Tech</h1>
+        </div>
+        <div class="d-xs-inline-block d-sm-none">
+          <h1 style="filter:brightness(200%);">Clemente.Tech</h1>
+        </div>
+      </div>
+</div>
+</nav>
+<body>
   <div id="test">      
     <img id="i1">
     <canvas id="background-canvas" class="" width="1500px" height="1500px">
@@ -22,21 +38,7 @@
     </canvas>
 </div>
     <main>
-      <nav class="test-blur">        
-          <div id="nav-bar-container" class="container-fluid" style="/*background-color: #0b0c29;*/ width: 100%;">
-              <div class="container-fluid" style="padding:1% 0;">
-                <div class="d-none d-lg-inline-block">
-                  <h1>Clemente.Tech</h1>
-                </div>
-                <div class="d-none d-sm-inline-block d-lg-none">
-                  <h1>Clemente.Tech</h1>
-                </div>
-                <div class="d-xs-inline-block d-sm-none">
-                  <h1>Clemente.Tech</h1>
-                </div>
-              </div>
-        </div>
-      </nav>
+      
         <div id="login" class="container d-none">
             <div class="card card-body" style="justify-content: center; background-color: #2e2a59;  background-color: #333333; background-color: inherit; height: 500px; max-width: 400px; margin-left:auto; margin-right:auto;">
                 <h3 style="border-bottom: 1px inset;">Login</h3>
