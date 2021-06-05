@@ -26,8 +26,8 @@
                 <div class="container-fluid" style="padding:.5% 60px; ">
                     <div class="navbar navbar-expand-md" style="color: white;">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#" style="font-weight: 600; font-size: 1.5rem; margin-left: 2.5%;">Clemente.Tech</a>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: calc(.1rem + 1.2vw); font-weight: 400;">
+                        <a class="navbar-brand" href="#" style="font-weight: 600; font-size: calc(1rem + 1.2vw); margin-left: 2.5%;">Clemente.Tech</a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1.5rem; font-weight: 400;">
                             <ul class="navbar-nav me-auto mb-0"  style="margin-left:70%; margin-right: auto;">
                                 <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
