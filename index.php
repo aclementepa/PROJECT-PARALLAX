@@ -1,101 +1,14 @@
 <html>
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <script src="https://kit.fontawesome.com/90cd6f0909.js" crossorigin="anonymous"></script>
-    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
-    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-    <link type="text/css" rel="stylesheet" href="main.css">
-    <link type="text/css" rel="stylesheet" href="desktop.css">
-    <link type="text/css" rel="stylesheet" href="slider.css">
-    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
-    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <style>
-    </style>
-    <style>
-        ::-webkit-scrollbar {            
-            width: 10px;
-        }
-        ::-webkit-scrollbar-thumb{
-        background-color: #5b5d5a; 
-        }
-        ::-webkit-scrollbar-thumb:hover{
-        background: #2d2f2c; 
-        }
-        ::-webkit-scrollbar-thumb:active{
-        background: #000; 
-        }
-        ::-webkit-scrollbar-track {
-        background: #5b5d5a
-        }
- 
-        /*
-        ::-webkit-scrollbar{
-            width:30px;
-          }
-          ::-webkit-scrollbar-track{
-            border-radius: 10px;
-          }
-          */
-    </style>
-</head> 
-<body>
-    <div class="row" style="margin:0;">        
-        <nav class="test-blur col-12" style="background-color: #000;/* background-image: url(conquer.jpg); background-position:center; background-size: contain; background-repeat: no-repeat; height: 500px;*/ padding:0;">        
-            <div id="nav-bar-container" class="container-fluid" style="width: 100%; opacity: .9; ">
-                <div class="container-fluid" style="padding:.5% 60px; ">
-                    <div class="navbar navbar-expand-md" style="color: white;">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="https://clemente.tech" style="font-weight: 600; font-size: calc(1rem + 1.2vw); margin-left: 2.5%;">Clemente.Tech</a>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: calc(.1rem + 1.2vw); font-weight: 400;">
-                            <ul class="navbar-nav me-auto mb-0"  style="margin-left:65%; margin-right: auto;">
-                                <li class="nav-item dropdown d-none">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Web Fun
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:green;">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">News</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Ideas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    </li>
-                            </ul>
-                        </div>
-                        <div style="float: right; margin-top: 1%;">
-                            <a class="nav-link" href="#" style="font-size: 1.5rem; margin-top:.1rem;"><i class="fas fa-sign-in-alt"></i></a>
-                        </div>
-                        <div style="float: right; margin-top: 1%;">
-                            <label class="switch">
-                                <input type="checkbox" id="dark-mode"> 
-                                <span class="slider"></span>       
-                              </label>
-                        </div>
-
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="row" style="background-color: #000;  ">
+    <?php
+        include "head.php";
+    ?>
+</head>
+<body>  
+    <?php
+        include "nav.php";
+    ?>
+    <div class="row" style="background-color: #000;">
         <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel" style="padding:0;margin-top: 5px;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#backgroundCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
