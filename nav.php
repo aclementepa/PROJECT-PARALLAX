@@ -17,7 +17,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#">News</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Ideas</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
                                 <li class="nav-item"></li>
                                 </ul>
                             </div>
