@@ -3,9 +3,13 @@ import os
 
 chrome_path = 'C:/Program Files(x86)/Google/Chrome/Application/chrome.exe %s'
 webbrowser.register('google-chrome', None, webbrowser.BackgroundBrowser(chrome_path))
-webbrowser.open_new("https://")
+webbrowser.open_new("http://localhost:83/assets.aspx")
+webbrowser.open_new("https://www.lansweeper.com/forum/yaf_topics28_Installers.aspx?=")
 webbrowser.open_new("http://dms.howardindustries.local")
 webbrowser.open_new("https://techrepublic.com")
+
+
+webbrowser.open_new("https://")
 
 # start programs
 
