@@ -155,3 +155,7 @@ ol, ul {
 .carousel-inner {
     position: unset;
 }
+
+.body-row {
+    padding:2.5rem; background-color: #eceae7; border-top: 1px solid #000;
+}

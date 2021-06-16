@@ -40,7 +40,7 @@
             </button>
         </div>
     </div>
-    <div class="row" style="padding:2.5rem; background-color: #eceae7; border-top: 1px solid #000;">
+    <div class="row body-row">
         <div class="col-md-2 col-lg-6"></div>
         <div class="card col-md-8 col-lg-6">
             <div class="card-body">
