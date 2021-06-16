@@ -8,11 +8,11 @@
     <?php
         include "nav.php";
     ?>
-        <div class="row">
+    <br><br>
+        <div class="row" style="background-color: #f8f8f8;">
             <div class="col-12">
-                <div>
-
-                </div>
+                    <h1 style="color: #000;">hello</h1>
+                    <br><br>
             </div>
         </div>
     </body>
