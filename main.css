@@ -159,3 +159,64 @@ ol, ul {
 .body-row {
     padding:2.5rem; background-color: #eceae7; border-top: 1px solid #000;
 }
+
+.no-border-card {
+    /*
+    border-radius: 0;
+    border: none;*/
+    margin: .5%;
+}
+@media (min-width: 1200px)
+{
+    .no-border-card {
+        width: 24%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .no-border-card {
+        width: 32%;
+    }
+}
+@media (max-width: 991px) and (min-width: 576px)
+{
+    .no-border-card {
+        width: 49%;
+    }
+}
+.card-links {
+    transition: .3s;
+}
+.card-links:hover {
+opacity: .75;
+
+}
+
+.card-links h1 {
+    text-align: center; 
+    font-weight: 600; 
+    text-decoration: none;
+    display: flex;
+    padding: 0; 
+    height: 100%;
+    margin-bottom: 0;
+    align-items:center;
+    justify-content: center;
+}
+
+.card-links img {
+    text-align: center; 
+    font-weight: 600; 
+    text-decoration: none;
+    display: flex;
+    padding: 0; 
+    margin-bottom: 0;
+    align-items:center;
+    justify-content: center;
+    object-fit: contain; 
+    margin-left: auto; 
+    margin-right: auto; 
+    height: 100%;
+    width: 100%;
+    max-height: 200px;
+}

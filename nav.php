@@ -2,7 +2,7 @@
     <nav class="test-blur col-12" style="background-color: #000;/* background-image: url(conquer.jpg); background-position:center; background-size: contain; background-repeat: no-repeat; height: 500px;*/ padding:0;">        
         <div id="nav-bar-container" class="container-fluid" style="width: 100%; opacity: .9; ">
             <div class="container-fluid" style="padding:.5% 60px; ">
-                <div class="navbar navbar-expand-md" style="color: white;">
+                <div class="navbar navbar-expand-sm" style="color: white;">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="https://clemente.tech" style="font-weight: 600; font-size: calc(1rem + 1.2vw); margin-left: 2.5%;">Clemente.Tech</a>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: calc(.1rem + 1.2vw); font-weight: 400;">
