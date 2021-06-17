@@ -8,7 +8,7 @@
     <?php
         include "nav.php";
     ?>
-    <div class="row d-none d-sm-inline-block" style="background-color: #000;">
+    <div class="row d-none d-md-inline-block" style="background-color: #000;">
         <div id="backgroundCarousel" class="carousel slide" data-bs-ride="carousel" style="padding:0;margin-top: 5px;">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#backgroundCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
