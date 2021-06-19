@@ -5,9 +5,9 @@
     <script src="https://kit.fontawesome.com/90cd6f0909.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
     <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-    <link type="text/css" rel="stylesheet" href="main.css">
-    <link type="text/css" rel="stylesheet" href="desktop.css">
-    <link type="text/css" rel="stylesheet" href="slider.css">
+    <link type="text/css" rel="stylesheet" href="CSS\main.css">
+    <link type="text/css" rel="stylesheet" href="CSS\desktop.css">
+    <link type="text/css" rel="stylesheet" href="CSS\slider.css">
     <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
     <style lang="en" type="text/css" id="dark-mode-native-style"></style>
     <link rel="preconnect" href="https://fonts.gstatic.com">

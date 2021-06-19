@@ -14,7 +14,7 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                                <li class="nav-item"><a class="nav-link" href="news.php">News</a></li>
                                 <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Ideas</a></li>
                                 <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>

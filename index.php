@@ -18,16 +18,16 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="height: 550px;">
-                  <img src="happen.jpg" class="d-block w-100" alt="..." style="height: 550px;">
+                  <img src="Images\happen.jpg" class="d-block w-100" alt="..." style="height: 550px;">
                 </div>
                 <div class="carousel-item"style="height: 550px;">
-                  <img src="batground.jpg" class="d-block w-100" alt="..." style="height: 550px;" >
+                  <img src="Images\batground.jpg" class="d-block w-100" alt="..." style="height: 550px;" >
                 </div>
               <div class="carousel-item"style="height: 550px;">
-                <img src="background.jpg" class="d-block w-100" alt="..." style="height: 550px;" >
+                <img src="Images\background.jpg" class="d-block w-100" alt="..." style="height: 550px;" >
               </div>
                 <div class="carousel-item" style="height: 550px;">
-                  <img src="ArnoldConquer.jpg" class="d-block w-100" alt="..." style="height: 550px;">
+                  <img src="Images\ArnoldConquer.jpg" class="d-block w-100" alt="..." style="height: 550px;">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#backgroundCarousel" data-bs-slide="prev">

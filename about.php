@@ -18,7 +18,7 @@
                 <div class="col-6" >
                     <div class="row">
                         <div class="col-12" >
-                            <img src="soccer.jpg"style="max-height: 500px; border-radius: .5rem;">
+                            <img src="Images\soccer.jpg"style="max-height: 500px; border-radius: .5rem;">
                         </div>
                             <br>
                         <div class="col-12" style="color: #000;">

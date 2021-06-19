@@ -1,8 +1,8 @@
 # $CodeCertificate = Get-ChildItem Cert:\LocalMachine\My | Where-Object {$_.Subject -eq "CN=ATA Authenticode"}
 $codeCertificate = Get-ChildItem Cert:\LocalMachine\My
 
-Remove-Item -Path "C:\xampp\xampp\htdocs\PROJECT-PARALLAX\*" -Recurse
-Copy-Item -Path "C:\Development\Github\PROJECT-PARALLAX\*" -Destination "C:\xampp\xampp\htdocs\PROJECT-PARALLAX" -Recurse
+Remove-Item -Path "C:\xampp\htdocs\PROJECT-PARALLAX\*" -Recurse
+Copy-Item -Path "C:\Github\PROJECT-PARALLAX\*" -Destination "C:\xampp\htdocs\PROJECT-PARALLAX" -Recurse
 # Set-AuthenticodeSignature -Filepath C:\Development\Github\PROJECT-PARALLAX\howard-gh-to-xamp-copy.ps1 -Certificate $CodeCertificate -TimeStampServer http://timestamp.digicert.com
 # SIG # Begin signature block
 # MIIR2wYJKoZIhvcNAQcCoIIRzDCCEcgCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
