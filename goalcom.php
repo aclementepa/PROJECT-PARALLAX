@@ -3,11 +3,6 @@
     <?php
         include "head.php";
     ?>
-    <style>
-    </style>
-    <style>
-    
-    </style>
     </head>
     <body>
     <?php
@@ -35,21 +30,20 @@
                             <img src="spotify.jpg" >
                         </div>
                     </a>
-                    <a class="card col-12 col-md-4 col-lg-4 no-border-card card-links" href="goalcom.php" style="background-color: #081f2c;">
+                    <a class="card col-12 col-md-4 col-lg-4 no-border-card card-links" href="https://goal.com" style="background-color: #081f2c;">
                         <div class="card-body" >
                             <img src="goalcom.png" >
                         </div>
                     </a>
-                    <a class="card col-12 col-md-4 col-lg-4 no-border-card card-links d-none" href="#" style="text-decoration: none;">
-                        <div class="card-body">
-                            <h1 class="card-title"  >Coming Soon</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id = "data" style="color: black !important;">
+                            <?php
+                                include "FileRead.php";
+                            ?>
                         </div>
-                    </a>  
-                    <a class="card col-12 col-md-4 col-lg-4 no-border-card card-links d-none" href="#" style="text-decoration: none;">
-                        <div class="card-body">
-                            <h1 class="card-title"  >Coming Soon</h1>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
     </body>
