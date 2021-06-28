@@ -27,7 +27,7 @@
         }
         $counter++;
         
-        $card = 
+        //$card = 
     }
 
 
