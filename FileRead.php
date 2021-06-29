@@ -15,7 +15,7 @@
             $imageSrc = substr($imageSrc, 0, strpos($imageSrc, "quality="))."quality=100&w=600";
 
             $image = "<img src=".$imageSrc."' style='' class=''>";
-            $div = "<a href=".$hrefSrc."' class='card card-links col-12 col-md-3' style=' background-color: #081f2c; color: #fff; border: none; border-radius: 0;'><div class='card-body' style='width: 100%; padding: 0;'>".$image."
+            $div = "<a href=".$hrefSrc."' class='card card-links col-12 col-md-3' style=' background-color: #081f2c; color: #fff; border: none; border-radius: 0.5rem;'><div class='card-body' style='width: 100%; padding: 0;'>".$image."
             <p style='padding: .5rem; text-align: center; text-decoration: none;'>".$textSrc."</p></div></a>";
             echo $div;
             echo "<br><br>";

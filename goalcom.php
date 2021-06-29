@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <br><br>
-                        <div id = "data" style="color: black !important; border-radius: .5rem;border: #081fsc 3px outset; " class="row">
+                        <div id = "data" style=" background-color: #081f2c; color: black !important; border-radius: .5rem; border: #081fsc 3px outset; " class="row">
                             <?php
                                 include "FileRead.php";
                             ?>
