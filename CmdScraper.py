@@ -14,7 +14,7 @@ def ScrapePage(webpage):
             image = elem.select('img')[0].attrs['src']
             link_text = elem.select('h3 a')[0].text.strip()
             link = elem.select('h3.widget-news-card__title a')[0].attrs['href']
-            tempArray = [link_text, (goal_header + link),  image]
+            tempArray = [(goal_header + link),  image, link_text]
             news_items.append(tempArray)
     elif(webpage == "http://barcablaugranes.com"):
         news_divs = soup.select('table.widget-news-card.card-type-article')
@@ -23,7 +23,7 @@ def ScrapePage(webpage):
             image = elem.select('img')[0].attrs['src']
             link_text = elem.select('h3 a')[0].text.strip()
             link = elem.select('h3.widget-news-card__title a')[0].attrs['href']
-            tempArray = [link_text, (barca_header + link),  image]
+            tempArray = [(barca_header + link),  image, link_text]
             news_items.append(tempArray)
     
     return news_items
