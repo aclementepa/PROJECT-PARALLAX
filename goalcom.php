@@ -20,15 +20,13 @@
         include "nav.php";
     ?>
             <div class="body-row">
-                <div class="row" style="">
-                    <a class="card col-12 col-md-5 col-lg-5 card-links" href="goalcom.php" style="background-color: #081f2c;">
-                        <div class="card-body" >
-                            <img src="goalcom.png" >
-                        </div>
-                    </a>
-                </div>
                 <br><br>
-                        <div id = "data" style="color: black !important; border-radius: .5rem;border: #081fsc 3px outset; " class="row">
+                        <div id = "data" style=" background-color: #081f2c; color: #fff; border-radius: .5rem; border: #081fsc 3px outset; " class="row">
+                            <a class="card col-12 col-md-6 col-lg-6 card-links" href="goalcom.php" style="background-color: #081f2c; border: none;">
+                                <div class="card-body" >
+                                    <img src="goalcom.png" >
+                                </div>
+                            </a>
                             <?php
                                 include "FileRead.php";
                             ?>
