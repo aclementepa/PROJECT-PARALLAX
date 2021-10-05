@@ -53,22 +53,20 @@ def SearchPoshmarkProducts(webpage, searchQuery, adidas_jerseys):
     
 
 
-    # print(page)
-
 webpage = "https://poshmark.com/"
 query = "soccer jersey"
 department = "men"
 
 SearchPoshmarkProducts(webpage, query, adidas_jerseys)
 
+webpage = "https://mercari.com/"
+
+
 # page2 = requests.get(webpage)
 # soup = BeautifulSoup(page2.content, 'html.parser')
 # news_items = []
-    
 
 
-
-    
 # strictness_pass = self._check_strictness(tile, arguments)
 # if strict and strictness_pass:
 #  There needs to be a better way to do this.
