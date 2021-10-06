@@ -1,7 +1,6 @@
 import enchant
 from itertools import permutations
 import sys
-import math
 
 def ConcatPermutations(letters):
     return [''.join(i) for i in permutations(letters)]
@@ -24,7 +23,7 @@ def Words(permutationsList):
     words = []
     d = enchant.Dict("en_US")
     for word in permutationsList:
-        if d.check(word):
+        if d.check(word) and words.count(word) == 0:
             words.append(word)
     return words
 
@@ -35,31 +34,12 @@ def UniqueList(listObj):
     return listObj
 
 line = sys.argv[1]
-counter = 0
 
-print("Anagrams:")
-anagrams = Anagrams(line)
-for i in anagrams:
-    counter+=1
-    print(i)
-print("\nNumber of Anagrams: " + str(counter))
-print("------------------------------------")
-
-counter = 0
-print("Anagram Permutations:")
 anagrams = Anagram_Permutations(line)
-for i in anagrams:
-    counter+=1
-    print(i)
-print("\nNumber of Anagram Permutations: " + str(counter))
-counter = 0
+print("\nNumber of Anagram Permutations: " + str(len(anagrams)))
 print("------------------------------------")
-counter = 0
 print("Words from " + line + ":")
 permutationsList = ConcatPermutations(line)
 wordList = Words(permutationsList)
-wordList = UniqueList(wordList)
-for word in wordList: 
-    print(word)
-    counter+=1
-print("Number of Words from " + line + ":" + str(counter))
+for word in wordList: print(word)
+print("Number of Words from " + line + ": " + str(len(wordList)))
