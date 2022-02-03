@@ -6,7 +6,7 @@ import os
 
 
 today = datetime.date.today()
-filepath = "C:\\Development\\Python\\SeptemberBDays.jpg"
+filepath = "C:\\Development\\Python\\Images\\SeptemberBDays.jpg"
 image = Image.open(filepath)
 rows = image.height
 cols = image.width

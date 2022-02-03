@@ -12,3 +12,32 @@ https://www.npmjs.com/package/http-server
 
 color api
 https://rapidapi.com/farba/api/color-extractor-for-apparel-2
+
+Goals for weekends:
+Setup Firewall
+Familiarize with backup processes (hard drive, disc image)
+
+Mercari bot - mercari magic # categories (https://www.mercari.com/us/category/102/)
+Store all in db
+Inspiration
+https://github.com/robherley/mercari-bot
+
+Sidelineswap scraper
+
+Store data in db
+Basic SQL DB for projects
+Basic C# MVC Project
+Create reports based off data
+
+Bots in: Python
+
+Automated Python scripts to test
+
+Basic Node.js project for personal ideas
+Favorite Lifting articles
+Study projects
+Articles & file uploads, etc.
+
+Later...
+Learn Testing to test websites
+Secure coding practices
