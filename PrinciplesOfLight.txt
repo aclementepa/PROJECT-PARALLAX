@@ -1,0 +1,19 @@
+Principles of Light
+
+Color Formula
+
+https://www.ethangardner.com/articles/2009/03/15/a-math-based-approach-to-color-theory-using-hue-saturation-and-brightness-hsb/
+
+ 
+
+ 
+
+https://donatbalipapp.medium.com/colours-maths-90346fb5abda
+
+ 
+
+I'm wary of purely mathematical approaches to color harmony; numbers have no aesthetic sensibilities. That said, since the Hue wheel is divided into 360 degrees, one can build a complementary color scheme by adding 180 to the hue for any given color, a triadic by adding and subtracting 120, and so on.
+
+ 
+
+The triadics below were done using simple arithmetic in the H field of the Photoshop color picker, adding 120 to the value each time. Pure RGB above (in reverse sequence, sorry!), and your starter color, #509cc0 in the row below.
