@@ -14,17 +14,24 @@ $user = Get-ADUser -Identity $Identity # -Filter "username -like '*$deactivateUs
 # configurations for random password generator (length, nonalphachars)
 # min/max length of password
 $min = 8
-$max = 15 
+$max = 16
 $nonAlpha = 5
 $length = Get-Random -Minimum $min -Maximum $max
 Add-Type -AssemblyName 'System.Web'
 $newPassword = [System.Web.Security.Membership]::GeneratePassword($length, $nonAlpha)
 
-# Change Password then disable user
-Write-Output($newPassword)
-Set-ADAccountPassword -Identity $user -Reset -NewPassword (ConvertTo-SecureString -AsPlainText $newPassword -Force)
-Disable-ADAccount -Identity $user
-
-if($Delete) {
-    Remove-ADUser -Identity $user -Confirm:$False
+try {
+    if($Delete) {
+        Remove-ADUser -Identity $user -Confirm:$False
+    }
+    else {
+        # Change Password then disable user
+        Write-Output($newPassword)
+        Set-ADAccountPassword -Identity $user -Reset -NewPassword (ConvertTo-SecureString -AsPlainText $newPassword -Force)
+        Disable-ADAccount -Identity $user
+    }
 }
+catch [System.Management.Automation.RuntimeException]{
+    Write-Output("Error: $_")
+}
+

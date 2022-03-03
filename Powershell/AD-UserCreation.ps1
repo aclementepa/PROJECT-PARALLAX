@@ -1,55 +1,51 @@
 # Author: Anthony Clemente
 # Purpose: Deactivate user & change their password. Include a delete parameter
+# Comments: Username must be entered as 'user.name'
 # Date: 3/3/2022
 
 Param
     (
-        [Parameter(Mandatory=$true)][string]$Identity, # Positional parameter
-        [switch]$Delete = $false
+        [Parameter(Mandatory=$true)][string]$Username,
+        [Parameter(Mandatory=$false)][string]$Password,
+        [Parameter(Mandatory=$true)][string]$OU,
+        [Parameter(Mandatory=$false)][string]$Group
     )
-
 
 function New-RandomPassword {
-    param(
-        [Parameter()]
-        [int]$MinimumPasswordLength = 5,
-        [Parameter()]
-        [int]$MaximumPasswordLength = 10,
-        [Parameter()]
-        [int]$NumberOfAlphaNumericCharacters = 5,
-        [Parameter()]
-        [switch]$ConvertToSecureString
-    )
+    $min = 8
+    $max = 16
+    $nonAlpha = 5    
+    $length = Get-Random -Minimum $min -Maximum $max
     
     Add-Type -AssemblyName 'System.Web'
-    $length = Get-Random -Minimum $MinimumPasswordLength -Maximum $MaximumPasswordLength
-    $password = [System.Web.Security.Membership]::GeneratePassword($length,$NumberOfAlphaNumericCharacters)
-    if ($ConvertToSecureString.IsPresent) {
-        ConvertTo-SecureString -String $password -AsPlainText -Force
-    } else {
-        $password
-    }
+    $password = [System.Web.Security.Membership]::GeneratePassword($length,$nonAlpha)
+    return $password
 }
 
+$name = $username.Split(".")
+$fullName = $name[0] + " " + $name[1]
 
-$firstname = $args[0]
-$lastname = $args[1]
+if([string]::IsNullOrWhiteSpace($password)) {
+    $password = New-RandomPassword
+    Write-Output("A random password has been generated for $username ($password).")
+}
+$password = ConvertTo-SecureString -String $password -AsPlainText -Force
+try {
+    New-ADUser -Name $fullName -GivenName $firstname  -UserPrincipalName "$username@howardindustries.local" -Organization "Howard Industries" -DisplayName $fullName -SamAccountName $username -Surname $name[1] -AccountPassword (ConvertTo-SecureString -String $password -AsPlainText -Force) -Enabled $true -CannotChangePassword $true -PasswordNeverExpires $true -PasswordNotRequired $False -ScriptPath "$logon_script.vbs"
+    Set-ADOrganizationalUnit -Identity $OU $Username -
+    Write-Output("User account for $username has been successfully created.")
 
-# $searchParameters = 'Name -like "*Test*"'
-
-# for testing, remove old user
-# $old_ad_user = Get-ADUser -Filter $searchParameters
-# Remove-ADUser $old_ad_user
-
-$sam_account_name = $args[0] + "." + $args[1]
-$logon_script = $args[0] + "." + $args[1] + ".vbs"
-$full_name = $args[0] + " " + $args[1]
-$userPrincipalName = $sam_account_name + "@howardindustries.local"
-$randomPassword = New-RandomPassword -MinimumPasswordLength 10 -MaximumPasswordLength 16 -NumberOfAlphaNumericCharacters 6 -ConvertToSecureString
-$password = ConvertTo-SecureString -String $randomPassword -AsPlainText -Force
-New-ADUser -Name $full_name -GivenName $firstname  -UserPrincipalName $userPrincipalName -Organization "Howard Industries" -DisplayName $full_name -SamAccountName $sam_account_name -Surname $lastname -AccountPassword $password -Enabled $true -CannotChangePassword $true -PasswordNeverExpires $true -PasswordNotRequired $False -ScriptPath $logon_script
-$newUser = Get-ADUser -Identity ($args[0] + "." + $args[1])
-Write-Output($newUser)
+    if([string]::IsNullOrWhiteSpace($Group)) {
+        $groups = $Group.split(',')
+        foreach ($g in $groups) {
+            Add-ADGroupMember -Identity $group[$i] -Member $Username
+            Add-ADOU
+        }
+    }
+}
+catch [System.Management.Automation.RuntimeException]{
+    Write-Output("Error: $_")
+}
 
 # $AD_Object = Get-ADUser -Filter $searchParameters
 # Write-Output $AD_Object
