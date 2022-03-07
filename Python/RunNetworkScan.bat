@@ -1,1 +1,0 @@
-python3 C:\Development\Python\NetworkScan.py lansweeper@howardindustries.com ClipChip7Table!
